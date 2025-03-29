@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="body.css">
+    <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
     <title>CheckMate</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.0/tesseract.min.js"
         integrity="sha512-afPVxdXPDy2JUnJic4oR7dT40i5SQC8xO6hyEckJ5NItyZi4QFRiauOW9ZXKYXUYl5BTvcmwpKhUedK2owJf8A=="
@@ -64,7 +65,10 @@
             </div>
             <!-- End File Details -->
             <br>
-            <button id="processImage">Extract Text</button>
+            <button id="processImage"  class="squishy squishy-neon">
+                <i data-lucide="crown"></i>
+                CheckMate</button>
+
         </div>
         <!-- End Upload Area -->
 
@@ -81,6 +85,10 @@
     </main>
     <script src="index.js"></script>
     <script src="upload.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
