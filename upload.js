@@ -1,6 +1,4 @@
-// Design By
-// - https://dribbble.com/shots/13992184-File-Uploader-Drag-Drop
-
+// Saikat Kumar Sardar Github :- https://github.com/saikatsardar01
 // Select Upload-Area
 const uploadArea = document.querySelector('#uploadArea')
 
@@ -197,7 +195,7 @@ function fileValidate(fileType, fileSize) {
     // If The Uploaded File Is An Image
     if (isImage.length !== 0) {
         // Check, If File Size Is 20 MB or Less
-        if (fileSize <= 2000000) { // 20 MB :)
+        if (fileSize <= 20000000) { // 20 MB :)
             return true;
         } else { // Else File Size
             return alert('Please Your File Should be 2 Megabytes or Less');
