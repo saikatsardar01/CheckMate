@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.0/tesseract.min.js"
+        integrity="sha512-afPVxdXPDy2JUnJic4oR7dT40i5SQC8xO6hyEckJ5NItyZi4QFRiauOW9ZXKYXUYl5BTvcmwpKhUedK2owJf8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>CheckMate - Tell</title>
+</head>
+
+<body>
+    <main>
+        <h1>
+            CheckMate - Tell</h1>
+
+
+        <!-- main body -->
+        <div id="uploadArea" class="upload-area">
+            <!-- Header -->
+            <div class="upload-area__header">
+                <h2 id="EnterFactText" class="upload-area__title"><b>Enter Your Fact!!</b></h2>
+
+            </div>
+
+            <div id="dropZoon">
+
+                <textarea id="UserInputFact" type="text" class="TxtInput" placeholder="Enter your fact!!"
+                    required></textarea>
+            </div>
+
+            <button onclick="printText()" id="processImage" class="pushable">
+                <span class="btn_front">
+                    <i data-lucide="crown"></i>
+                    <b>CheckMate</b>
+                </span>
+            </button>
+        </div>
+        <div class="ResultText">
+            <h3 id="outputParagraph"></h3>
+        </div>
+            <a href="/" class="floating-btn">
+                    <i data-lucide="image"></i>
+            </a>
+    </main>
+</body>
+<script src="text.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+</html>
