@@ -4,54 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="body.css">
+    <title>Feedback</title>
     <link rel="stylesheet" href="feedback.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.0/tesseract.min.js"
-        integrity="sha512-afPVxdXPDy2JUnJic4oR7dT40i5SQC8xO6hyEckJ5NItyZi4QFRiauOW9ZXKYXUYl5BTvcmwpKhUedK2owJf8A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>CheckMate - Tell</title>
 </head>
 
 <body>
-    <main>
-        <h1>
-            CheckMate - Tell</h1>
-        <br>
-
-        <!-- main body -->
-        <div id="uploadArea" class="upload-area">
-            <!-- Header -->
-            <div class="upload-area__header">
-                <h2 id="EnterFactText" class="upload-area__title"><b>Enter Your Fact!!</b></h2>
-            </div>
-            <br>
-            <div id="dropZoon">
-
-                <textarea id="UserInputFact" type="text" class="TxtInput" placeholder="Enter your fact!!"
-                    required></textarea>
-            </div>
-
-            <button onclick="printText()" id="processImage" class="pushable">
-                <span class="btn_front">
-                    <i data-lucide="crown"></i>
-                    <b>CheckMate</b>
-                </span>
-            </button>
-        </div>
-        <div class="ResultText">
-            <h3 id="outputParagraph"></h3>
-        </div>
-        <a href="/" class="floating-btn">
-            <i data-lucide="image"></i>
-        </a>
-    </main>
-
-
-
-    <!-- For Message -->
-
     <!-- <form method="POST" action="https://formsubmit.co/your@email.com" enctype="multipart/form-data">
         <input type="email" name="email" placeholder="Your email">
         <textarea name="message" placeholder="Details of your problem"></textarea>
@@ -71,6 +28,7 @@
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z" />
                         </svg> -->
+
                         <i data-lucide="x"></i>
                     </button>
                 </div>
@@ -108,9 +66,13 @@
                     </div>
                 </form>
             </div>
-            <div class="floating-btn-2">
+            <div class="CheckMateForm-action-buttons">
                 <button class="CheckMateForm-action-btn" onclick="chatboxToogleHandler()">
+                    <!-- <span class="CheckMateForm-chat-icon"> -->
+                    <!-- <span class="btn_front"> -->
                     <i data-lucide="message-square"></i>
+                    <!-- </span> -->
+                    <!-- </span> -->
                 </button>
             </div>
         </div>
@@ -126,10 +88,8 @@
         }
     </script>
 
-    <!-- For MEssage Ends here -->
-
 </body>
-<script src="text.js"></script>
+
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
     lucide.createIcons();

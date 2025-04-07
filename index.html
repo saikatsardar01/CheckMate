@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="feedback.css">
     <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
     <title>CheckMate</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.0/tesseract.min.js"
@@ -16,7 +17,7 @@
 <body>
     <main>
         <h1>CheckMate</h1>
-
+        <br>
 
         <!-- Making File Upload UI -->
 
@@ -65,7 +66,7 @@
             </div>
             <!-- End File Details -->
             <br>
-            <button id="processImage"  class="squishy squishy-neon">
+            <button id="processImage" class="squishy squishy-neon">
                 <i data-lucide="crown"></i>
                 CheckMate</button>
 
@@ -83,9 +84,89 @@
         </div>
 
 
-            <a href="./text.html" class="floating-btn">
-                    <i data-lucide="message-square-text"></i>
-            </a>
+        <a href="./text.html" class="floating-btn">
+            <i data-lucide="message-square-text"></i>
+        </a>
+
+
+        <!-- For Message -->
+
+        <!-- <form method="POST" action="https://formsubmit.co/your@email.com" enctype="multipart/form-data">
+        <input type="email" name="email" placeholder="Your email">
+        <textarea name="message" placeholder="Details of your problem"></textarea>
+        <input type="file" name="attachment" accept="image/png, image/jpeg">
+        <button type="submit">Send Test</button>
+    </form> -->
+
+        <div class="CheckMateForm-main-wrapper">
+            <div class="w-full">
+                <div class="CheckMateForm-form-wrapper">
+                    <div class="CheckMateForm-form-header">
+                        <h3>Feedback / Corrigendum</h3>
+                        <button onclick="chatboxToogleHandler()">
+                            <!-- <svg width="17" height="17" viewBox="0 0 17 17" fill="white">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.474874 0.474874C1.10804 -0.158291 2.1346 -0.158291 2.76777 0.474874L16.5251 14.2322C17.1583 14.8654 17.1583 15.892 16.5251 16.5251C15.892 17.1583 14.8654 17.1583 14.2322 16.5251L0.474874 2.76777C-0.158291 2.1346 -0.158291 1.10804 0.474874 0.474874Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z" />
+                        </svg> -->
+                            <i data-lucide="x"></i>
+                        </button>
+                    </div>
+                    <form action="https://formsubmit.co/saikat_scse2024@msit.edu.in" method="POST"
+                        enctype="multipart/form-data" class="CheckMateForm-chatbox-form">
+                        <div class="CheckMateForm-mb-5">
+                            <label for="name" class="CheckMateForm-form-label"> Your Name* </label>
+                            <input type="text" name="name" id="name" placeholder="Your Name"
+                                class="CheckMateForm-form-input" required />
+                        </div>
+
+                        <div class="CheckMateForm-mb-5">
+                            <label for="email" class="CheckMateForm-form-label"> Email Address* </label>
+                            <input type="email" name="email" id="email" placeholder="example@domain.com"
+                                class="CheckMateForm-form-input" required />
+                        </div>
+
+                        <div class="CheckMateForm-mb-5">
+                            <label for="email" class="CheckMateForm-form-label"> Upload Image (Corrigendum)</label>
+                            <input type="file" name="attachment" class="CheckMateForm-form-input"
+                                accept="image/png, image/jpeg">
+                        </div>
+
+                        <div class="CheckMateForm-mb-5">
+                            <label for="message" class="CheckMateForm-form-label"> Message </label>
+                            <textarea rows="6" name="message" id="message" placeholder="Explain you queries"
+                                class="CheckMateForm-form-input"></textarea>
+                        </div>
+
+                        <input type="hidden" name="_autoresponse"
+                            value="Thank You, very much for you valuable contribution to make us better, we will surely look into the matter and connect to you soon...">
+
+                        <div>
+                            <button class="CheckMateForm-btn w-full" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="floating-btn-2">
+                    <button class="CheckMateForm-action-btn" onclick="chatboxToogleHandler()">
+                        <i data-lucide="message-square"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            const formWrapper = document.querySelector(".CheckMateForm-form-wrapper");
+            const formActionButton = document.querySelector(".CheckMateForm-action-btn");
+            function chatboxToogleHandler() {
+                formWrapper.classList.toggle("active");
+                formActionButton.classList.toggle("active");
+            }
+        </script>
+
+        <!-- For MEssage Ends here -->
+
 
 
     </main>
