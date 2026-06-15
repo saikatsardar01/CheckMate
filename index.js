@@ -40,7 +40,7 @@ document.getElementById('processImage').onclick = () => {
                     console.log("INSERT_INPUT_HERE:", INSERT_INPUT_HERE);// Debugging to ensure it is updated
 
 
-                    const API_KEY = "AIzaSyAWYK2ralYyPCyqXstN3_Tz5gNFkOp0BhA"; // Last word will be A instead of B
+                    const API_KEY = "GEMINI_KEY"; // Last word will be A instead of B
 
                     console.log("Value of INSERT_INPUT_HERE : ", INSERT_INPUT_HERE);
 
